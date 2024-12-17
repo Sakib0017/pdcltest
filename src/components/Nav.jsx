@@ -19,7 +19,7 @@ const Nav = () => {
             },
           }
         );
-        setSocialLinks(response.data);
+        setSocialLinks(response.data.data);
       } catch (err) {
         setError("Error fetching social links");
       } finally {
@@ -127,7 +127,7 @@ const Nav = () => {
                 />
               </svg>
             </a>
-            <Link to={socialLinks.youtube}><a
+            <a
               href={socialLinks.youtube}
               target="_blank"
               rel="noopener noreferrer"
@@ -146,7 +146,7 @@ const Nav = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-            </a></Link>
+            </a>
             <a
               href={socialLinks.linkedin}
               target="_blank"
