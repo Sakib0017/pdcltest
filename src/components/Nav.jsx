@@ -127,7 +127,7 @@ const Nav = () => {
                 />
               </svg>
             </a>
-            <a
+            <Link to={socialLinks.youtube}><a
               href={socialLinks.youtube}
               target="_blank"
               rel="noopener noreferrer"
@@ -146,7 +146,7 @@ const Nav = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-            </a>
+            </a></Link>
             <a
               href={socialLinks.linkedin}
               target="_blank"
